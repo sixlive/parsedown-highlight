@@ -1,0 +1,48 @@
+{
+    "name": "sixlive/parsedown-highlight",
+    "description": "Server side code block rendering for Parsedown",
+    "keywords": [
+        "markdown",
+        "code",
+        "parsedown"
+    ],
+    "homepage": "https://github.com/sixlive/parsedown-highlight",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "TJ Miller",
+            "email": "oss@tjmiller.co",
+            "homepage": "https://tjmiller.co",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^7.1|7.2",
+        "erusev/parsedown": "1.8.0-beta-1",
+        "scrivo/highlight.php": "v9.12.0.5"
+    },
+    "require-dev": {
+        "friendsofphp/php-cs-fixer": "^2.10",
+        "larapack/dd": "^1.0",
+        "sempro/phpunit-pretty-print": "^1.0",
+        "phpunit/phpunit": "^6.0|^7.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "sixlive\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "phpunit",
+        "styles:lint": "php-cs-fixer fix --dry-run --diff",
+        "styles:fix": "php-cs-fixer fix"
+    },
+    "config": {
+        "sort-packages": true
+    }
+}

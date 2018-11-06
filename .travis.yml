@@ -1,0 +1,31 @@
+cache:
+  directories:
+    - $HOME/.composer/cache
+
+language: php
+
+env:
+  global:
+    - COVERAGE=0
+
+matrix:
+  include:
+    - php: 7.1
+    - php: 7.2
+      env: COVERAGE=1
+  fast_finish: true
+
+before_script:
+    - composer config discard-changes true
+
+before_install:
+  - travis_retry composer self-update
+
+install:
+  - travis_retry composer install --prefer-dist --no-interaction --no-suggest
+
+script:
+  - vendor/bin/phpunit
+
+after_success:
+  - if [[ $COVERAGE = 1 ]]; then bin/coverage report; fi
