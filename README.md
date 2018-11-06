@@ -25,15 +25,15 @@ You can install the package via composer:
 
 Here is a post with some code in it.
 
-```php
+\```php
 <?php
 
 echo 'foo';
-```
+\```
 
-```asldfh
+\```asldfh
 put 'WHOOP!'
-```
+\```
 ```
 
 ```php
