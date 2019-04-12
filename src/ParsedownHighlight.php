@@ -17,6 +17,10 @@ class ParsedownHighlight extends Parsedown
 
     protected function blockFencedCodeComplete($block)
     {
+        if (! isset($block['element']['element']['attributes'])) {
+            return $block;
+        }
+
         $code = $block['element']['element']['text'];
         $languageClass = $block['element']['element']['attributes']['class'];
         $language = explode('-', $languageClass);
