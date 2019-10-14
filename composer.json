@@ -19,7 +19,7 @@
     "require": {
         "php": "^7.1|7.2",
         "erusev/parsedown": "1.8.0-beta-5",
-        "scrivo/highlight.php": "^9.14"
+        "scrivo/highlight.php": "^9.15.6.1"
     },
     "require-dev": {
         "friendsofphp/php-cs-fixer": "^2.10",
