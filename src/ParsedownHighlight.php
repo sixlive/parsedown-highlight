@@ -2,9 +2,9 @@
 
 namespace sixlive;
 
-use Parsedown;
 use DomainException;
 use Highlight\Highlighter;
+use Parsedown;
 
 class ParsedownHighlight extends Parsedown
 {

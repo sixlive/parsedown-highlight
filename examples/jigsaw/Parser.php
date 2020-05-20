@@ -1,7 +1,7 @@
 <?php
 
-use sixlive\ParsedownHighlight;
 use Mni\FrontYAML\Markdown\MarkdownParser;
+use sixlive\ParsedownHighlight;
 
 class Parser extends ParsedownHighlight implements MarkdownParser
 {
