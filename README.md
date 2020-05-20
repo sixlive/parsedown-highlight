@@ -51,6 +51,16 @@ $parsedown->text(file_get_contents(__DIR__.'/README.md'));
 <pre><code class="language-asldfh">put 'WHOOP!'</code></pre>
 ```
 
+### Using Parsedown Extra
+**Note: This requires version [0.8.0-beta-1](https://github.com/erusev/parsedown-extra/releases/tag/0.8.0-beta-1)**
+
+```php
+$parsedown = new \sixlive\ParsedownHighlightExtra;
+
+$parsedown->text(file_get_contents(__DIR__.'/README.md'));
+```
+
+
 ## Testing
 
 ``` bash
