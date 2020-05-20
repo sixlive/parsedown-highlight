@@ -1,7 +1,7 @@
 <?php
 
-use TightenCo\Jigsaw\Jigsaw;
 use Mni\FrontYAML\Markdown\MarkdownParser;
+use TightenCo\Jigsaw\Jigsaw;
 
 require __DIR__.'/vendor/autoload.php';
 require __DIR__.'/Parser.php';
